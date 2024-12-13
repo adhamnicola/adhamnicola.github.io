@@ -1,0 +1,43 @@
+<div class="slider">
+    <div class="silde-track">
+        <div class="slide">
+            <img src="./assets/1.png" height="100" width="100">
+            <img src="./assets/3.png" height="100" width="100">
+        </div>
+    </div>
+</div>
+
+<style>
+    @keyframes scroll{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(calc(-250px*7));
+        }
+    }
+    .slider{
+        height: 100px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        gap: 500px;
+        width: auto;
+    }
+    .slider .slide-track{
+        animation: scroll 40s linear infinite;
+        display: flex;
+        width: calc(250px * 14);
+    }
+    .slider .slide{
+        height: 100px;
+        width: 250px;
+    }
+</style>
+
+<img src="./assets/1.png" height="300" width="300">
+<img src="./assets/3.png" height="300" width="255">
+<img src="./assets/2.png" height="300" width="300">
+<img src="./assets/4.png" height="300" width="255">
+<img src="./assets/2.png" height="300" width="300">
+<img src="./assets/5.png" height="300" width="255">
